@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     df_groupby = df_csv.select("Age","Country","Gender")\
                     .groupBy("Country","Gender")\
-                    .agg(avg("Age").alias("Average_age"))
+                    .agg(avg("Age").alias("Average_age_2"))
 
     df_groupby.show()
 
